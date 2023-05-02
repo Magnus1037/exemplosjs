@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="ordenando.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Document</title>
+  </head>
+  <body class="container">
+    <div class='form-group'>
+      <label for="valor">Valor</label>
+      <input
+        type="number"
+        name="valor"
+        id="valor"
+        value="1"
+        class="form-control"
+      />
+    </div>
+    <button id="adicionar" class="btn btn-primary">Adicionar</button>
+    <hr />
+    <div class='form-group'>
+    <select name="algoritimo" id="algoritimo" class="form-control">
+      <!-- <option value='swap'>Swap</option> -->
+        <option value="shuffle">Shuffle</option>
+        <option value="bubble_sort" selected>Bubble Sort</option>
+        <option value="selection_sort">Selection Sort</option>
+        <option value="quick_sort">Quick Sort</option>
+        <!-- <option value='partition'>Partition</option> -->
+      </select>
+    </div>
+      <button id="ordenar" class="btn btn-primary">Ordenar</button>
+      <button id="misturar" class="btn btn-primary">Misturar</button>
+    <ul id="lista">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+    </ul>
+  </body>
+</html>
